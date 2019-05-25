@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Email Preferences</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="emailPref">
+
+            <div class="pref-container">
+                <h1 class="pref-tit">EMAIL PREFERENCES</h1>
+                <section class="email">
+                    <form action="#" method="post" id="emailPref">
+                       <fieldset class="email">
+                            <label>Email Address</label>
+                            <input name="email" type="email" value="" placeholder="will.roberts@houseofblues.com"></input>
+                         </fieldset>
+                       
+                      </form>
+                </section>
+
+                <div id="hiddenPref">
+                 <section class="name-phone">
+                  <form action="#" method="post" id="emailPref">
+                     <fieldset class="name nameleft">
+                            <label>First Name</label>
+                            <input name="firstname" type="text" value="" placeholder="William"></input>
+                         </fieldset>
+                         <fieldset class="name">
+                            <label>Last Name</label>
+                            <input name="lastname" type="text" value="" placeholder="Roberts"></input>
+                         </fieldset>
+                        
+                          <fieldset>
+                            <label>Mobile Number</label>
+                            <input name="phone" type="text" value="" placeholder="( &nbsp; )___-____"></input>
+                         </fieldset>
+                         <div class="blurb">Legal text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus diam, auctor id ipsum et, porta dapibus urna. Sed feugiat dui in accumsan suscipit. Ut auctor, tellus vitae scelerisque congue, nunc orci aliquam neque, sed auctor tortor diam ut felis. Donec et urna eu turpis pretium mattis a quis metus. Sed dapibus blandit ligula, eu scelerisque lectus imperdiet a. Praesent vel ante erat. Fusce sagittis sit amet augue et bibendum. Duis pellentesque justo luctus erat iaculis, ac dictum lorem egestas. 
+                         </div>
+                         <fieldset class="checkbox">
+                            <input name="agree" type="checkbox" value="termsofsvc"></input> &nbsp;<label> I Agree</label>
+                         </fieldset>
+                          <fieldset>
+                            <label>Zip Code</label><br>
+                            <input class="zip" name="zip" type="text" value="" placeholder="#####"></input>
+                         </fieldset>
+                  </section>
+                   <section class="interests">
+                        <h1 class="interests"><img src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/blk-line.jpg" style="width:25%;padding-bottom:8px;margin-bottom:0px;" />&nbsp; MY INTERESTS &nbsp;<img src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/blk-line.jpg" style="width:25%;padding-bottom:8px;margin-bottom:0px;" /></h1>
+                         
+                    <div class="venues-main">     
+                       <!--<div class="fr-rest"> 
+                            <div class="fr-left"><img data-red="img/heart-red.jpg" src="img/heart-empty.jpg"> &nbsp;Foundation Room</div>
+                            <div class="rest-right"><img data-red="img/heart-red.jpg" src="img/heart-empty.jpg"> &nbsp;Restaurants</div>  
+                            <div style="clear:both;"></div> 
+                        </div>-->
+                        <ul class="my-eventsUl">
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-01" class="checkboxLabel">HOB Store (Gear Shop)</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-02" class="checkboxLabel">Free Events</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-03" class="checkboxLabel">Food Events/Dining/Rest.</label></li>
+                                 <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-05" class="checkboxLabel">VIP Events</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-06" class="checkboxLabel">Special Events/Rentals</label></li>
+                               <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-03" class="checkboxLabel">Foundation Room Events</label></li>
+                                 <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-05" class="checkboxLabel">Restaurant Events</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-06" class="checkboxLabel">Mobile opt in</label></li>
+                            </ul>
+                        <div class="venues">
+                            <h4 class="title-inner">Venues I am Currently Subscribed to:</h4>
+                            <ul class="my-venuesUl">
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg"> &nbsp;<label for="tabl-signup-01" class="checkboxLabel">ANAHEIM</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-02" class="checkboxLabel">BOSTON</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-03" class="checkboxLabel">CHICAGO</label></li>
+                                 <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-05" class="checkboxLabel">DALLAS</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-06" class="checkboxLabel">HOUSTON</label></li>
+                               
+                            </ul>
+                        
+                            <h4 class="title-inner">Other Venues I'd Like to Add to my Preferences: </h4>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default accordion-caret-left">
+                                  <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        House of Blues Venues<span class="caret" style="margin-top:1px; margin-left:8px;"></span>
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                     <ul class="my-venuesUl">
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-01" class="checkboxLabel">ANAHEIM</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-02" class="checkboxLabel">BOSTON</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-03" class="checkboxLabel">CHICAGO</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-12" class="checkboxLabel">CLEVELAND</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-05" class="checkboxLabel">DALLAS</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-06" class="checkboxLabel">HOUSTON</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-07" class="checkboxLabel">LAS VEGAS</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-08" class="checkboxLabel">LOS ANGELES</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-12" class="checkboxLabel">MYRTLE BEACH</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-07" class="checkboxLabel">NEW ORLEANS</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-08" class="checkboxLabel">ORLANDO</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-12" class="checkboxLabel">SAN DIEGO</label></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Clubs and Theatres<span class="caret" style="margin-top:1px; margin-left:8px;"></span>
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                      <h4 class="panel-title">EAST COAST</h4>
+                                      <ul class="my-cntUl">
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="Atlanta, GA"for="tabl-signup-06" class="checkboxLabel tooltip-1">Coca-Cola Roxy Theatre</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label  title="Charlotte, NC" for="tabl-signup-08" class="tooltip-1 checkboxLabel">The Fillmore Charlotte</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label  title="Miami Beach, FL" class="tooltip-1 checkboxLabel" for="tabl-signup-10">The Fillmore Miami Bch</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="Philadelphia, PA" for="tabl-signup-12" class="tooltip-1 checkboxLabel">The Fillmore Philly</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="Silver Spring, MD" for="tabl-signup-11" class="tooltip-1 checkboxLabel">The Fillmore Silver Spring</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="New York, NY" for="tabl-signup-11" class="tooltip-1 checkboxLabel">Gramercy Theatre</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="New York, NY" for="tabl-signup-12" class="tooltip-1 checkboxLabel">Irving Plaza</label></li> 
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="Westbury, NY" for="tabl-signup-12" class="tooltip-1 checkboxLabel">NYBC Theatre @Westbury</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="Wallingford, CT" for="tabl-signup-11" class="tooltip-1 checkboxLabel">Oakdale Theatre</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="Philadelphia, PA" for="tabl-signup-10" class="tooltip-1 checkboxLabel">Punchline Philadelphia</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label title="Indianapolis, IN" for="tabl-signup-12" class="tooltip-1 checkboxLabel">The Old National Center</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-09" class="checkboxLabel">The Ritz Raleigh</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-10" class="checkboxLabel">The Tabernacle</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-11" class="checkboxLabel">Theatre of Living Arts</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-12" class="checkboxLabel">Tower Theatre</label></li>
+                                           
+                                           </ul>
+                                         <h4 class="panel-title">MIDWEST</h4>
+                                        <ul class="my-cntUl"> 
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-01" class="checkboxLabel">20 Monroe Live</label></li>
+                                           <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-03" class="checkboxLabel">Aztec Theatre</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-04" class="checkboxLabel">Bogart's</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-11" class="checkboxLabel">Mercury Ballroom</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-11" class="checkboxLabel">Revention Music Center</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-09" class="checkboxLabel">St. Andrew's Hall</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-09" class="checkboxLabel">The Fillmore Detroit</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-10" class="checkboxLabel">The Louisville Palace</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-09" class="checkboxLabel">The Orpheum Theatre</label></li>
+                                        </ul>
+
+                                         <h4 class="panel-title">WEST COAST</h4>
+                                      <ul class="my-cntUl">
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-02" class="checkboxLabel">Ace of Spades</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-05" class="checkboxLabel">Cobb's Comedy Club</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-07" class="checkboxLabel">Comerica Theatre</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-12" class="checkboxLabel">Fox Riverside</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-11" class="checkboxLabel">Punchline Sacramento</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-12" class="checkboxLabel">Punchline San Francisco</label></li>
+                                          <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg"> &nbsp;<label for="tabl-signup-12" class="checkboxLabel">The Wiltern</label></li>
+                                       </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            <h4 class="title-inner">Music Genres I am Interested in:</h4>
+                            <ul class="my-musicUl">
+                                
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" name="genreComedy"> &nbsp;<label for="tabl-signup-02" class="checkboxLabel">Comedy</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" name="genreCountry"> &nbsp;<label for="tabl-signup-03" class="checkboxLabel">Country/Folk</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" name="genreHiphop"> &nbsp;<label for="tabl-signup-04" class="checkboxLabel">Hop-Hop/Rap/Soul</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" name="genreRockpop"> &nbsp;<label for="tabl-signup-06" class="checkboxLabel">Rock/Pop Electronic</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" name="genreOther"> &nbsp;<label for="tabl-signup-07" class="checkboxLabel">Other/Music Events</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" name="genreWorld"> &nbsp;<label for="tabl-signup-09" class="checkboxLabel">World/Jazz/Blues</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" name="genreFamily"> &nbsp;<label for="tabl-signup-11" class="checkboxLabel">Family</label></li>
+                                <li class="venue"><img data-red="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-red.jpg" src="https://mavenprodstorage.blob.core.windows.net/img/HOB/General/EmailPref_page/img/heart-empty.jpg" name="genreFood"> &nbsp;<label for="tabl-signup-12" class="checkboxLabel">Food/Wine/Beer</label></li>
+                            </ul>
+                          </div>
+                        </div><!--end venues-main-->
+                    </section>
+                  </div><!--end hiddenPref-->
+                    <section class="name-phone">
+                       <fieldset class="sub-btn">
+                            <button type="submit" form="emailPref" value="Submit" class="em-pref">SUBMIT</button>
+                        </fieldset>
+                    </form>
+                  </section>
+                  
+            </div><!--end container-->
+        </div>
+       
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        /* tooltip */
+            $(function() {
+                $(".tooltip-1").tooltip({
+                position: {
+                  my: "center bottom",
+                  at: "right top-5",
+                  collision: "none"
+               }
+              }); 
+            });
+          /*hide main content on first load */
+                   function show_pref() {
+                        $('#hiddenPref').show();
+                   }
+                   $('button.em-pref').click(show_pref);
+
+
+        /* heart swap for checkbox imitation */
+                function image_swap() {
+                    var dataRed = $(this).attr('data-red');
+                    var theSrc = $(this).attr('src');
+                    $(this).attr('data-red', theSrc);
+                    $(this).attr('src', dataRed);
+                }
+                $('.venues-main img').click(image_swap);
+
+
+          /*retireve form values */
+
+            /* to get the checked red heart */
+            var checkedX = $('img[src$="img/heart-red.jpg"]');
+            var venueName = checkedX.attr("name");
+            //alert(venueTitle);
+            //JSON.stringify($('form#emailPref').serializeArray());
+            var siteUrl = $("#siteUrl").val();
+          ePrefVenues = [];
+
+          function setupVenues(venues) {
+              if (venues && venues.length > 1) {
+                  _.each(venues, function (venue, i) {
+                      var prefObj = JSON.parse(venue.NewsletterVenueJSON);
+                      ePrefVenues.push(prefObj);
+
+                      if (siteUrl.indexOf("houseofblues") < 0 && siteUrl.indexOf("maven-prod.hobentertainment") < 0 && siteUrl.indexOf("hob.maven-qa") < 0 && siteUrl.indexOf("tenanthob") < 0) {
+                          var checkbox = "";
+                          if (i % 2 == 0)
+                              checkbox += '<div class="col-left"><div class="checkbox_div clear_with_success">';
+                          else
+                              checkbox += '<div class="col-right"><div class="checkbox_div clear_with_success">';
+                          checkbox += '<input id="checkbox' + i + '" class="checkbox-newsletter" type="checkbox" name="pageid_' + i + '" value="' + prefObj.pageId + '" style="width: 20px; display: inline;">';
+                          checkbox += '<label class="checkbox_label" for="checkbox' + i + '">' + prefObj.name + '</label></div></div>';
+                          $("#checkboxes").append(checkbox);
+                      }
+                  });
+              }
+              else if (venues && venues.length > 0) {
+                  var venueObj = JSON.parse(venues[0].NewsletterVenueJSON);
+                  ePrefVenues.push(prefObj);
+                  $("#single-venue-header").html(prefObj.name).append('<input type="hidden" name="pageid_0" value="' + prefObj.pageId + '" />');
+              }
+          }
+
+          //setupVenues();
+
+          function submitEmailPref() {
+
+              var bAjaxSuccess = false;
+              var data = $("form#emailPref").serializeArray();
+              var dataString = $("form#emailPref").serialize();
+              //data = "date=" + new Date().toUTCString() + "&" + data;
+
+              var sendPrefVenues = _.filter(ePrefVenues, function (venue) {
+                  return dataString.indexOf(venue.pageId) > -1;
+              });
+
+              data.push({ name: "date", value: new Date().toUTCString() });
+              data.push({ name: "ePrefVenues", value: JSON.stringify(sendPrefVenues) });
+
+              $("#img-loader").show();
+              $(".msgContText").empty().html("Please wait...");
+              $(".msgCont").removeClass('msgContError').addClass('msgContMsg').show();
+
+              $.get(siteUrl + "/api/Newsletter/TriggeredSend", $.param(data), function (data) {
+                  bAjaxSuccess = true;
+
+                  //$(".msgCont").css({ 'margin-top': '200px' });
+                  $(".msgContText").empty().append("Thank you!");
+                  $("#img-loader").hide();
+                  setTimeout(function () { location.reload(); }, 3000);
+              });
+
+              
+
+
+              //mitigate fact that ajax callback won't be called with jsonp
+              //wait a while and see if ajax call was successful
+              //if it wasn't then it failed and we can act on that
+              setTimeout(function () {
+                  if (!bAjaxSuccess) {
+
+                      $(".msgCont").removeClass('msgContMsg').addClass('msgContError');
+                      $(".msgContText").empty().append("There was a problem. Please try again");
+                      $("#img-loader").hide();
+                  }
+              }, 20000); //wait 10 seconds (it takes 3 seconds per venue under good circumstances)
+          }
+
+          $("form#emailPref").submit(function (e) {
+              e.preventDefault();
+              //if (ValidateEmailPrefInput(e)) {
+                  submitEmailPref(e);
+             // }
+             // else {
+                  $(".msgCont").show().removeClass('msgContMsg').addClass('msgContError');
+             // }
+              return false;
+          });
+
+               
+        </script>
+    </body>
+    </html>

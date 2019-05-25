@@ -1,0 +1,423 @@
+/**/
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ===============
+    ALL: IE Fixes
+   =============== */
+.ie7 .title {
+    padding-top: 20px;
+}
+/* ==========================================================================
+   F.Studer HOB custom styles
+   ========================================================================== */
+
+@font-face {
+ font-family:'Brandon Grotesque Bold';
+    src:url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-bld-webfont.eot');
+    src:url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-bld-webfont.ttf') format('truetype'),
+        url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-bld-webfont.svg') format('svg'),
+        url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-bld-webfont.woff2') format('woff2'),
+        url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-bld-webfont.woff') format('woff');
+    font-weight:normal;
+    font-style: italic;
+}
+@font-face {
+ font-family:'Brandon Grotesque Medium';
+    src:url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-med-webfont.eot');
+    src:url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-med-webfont.ttf') format('truetype'),
+        url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-med-webfont.svg') format('svg'),
+        url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-med-webfont.woff2') format('woff2'),
+        url('http://maven-prod.azurewebsites.net/Themes/HOB/fonts/brandon-med-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* img {
+    max-width:100%;
+    height:auto;
+}
+body {
+    width:100%;
+}
+#emailPref {
+	width:100%;
+    max-width:1200px;
+    height:auto;
+	margin:0 auto;
+    margin-top:37px;
+	text-align:center;
+}
+.pref-container {
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    text-align:center;
+}
+h1.pref-tit {
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    font-size:32px;
+    color:#fff;
+    letter-spacing:1px;
+    background:#416e7c;
+    width:100%;
+    margin: 0 0;
+    padding:20px;
+    border-top:2px solid #222;
+}
+section.email {
+    display:block;
+    overflow:auto;
+    width:100%;
+    background:#fff;
+    padding:10px;
+}
+section.name-phone {
+    display:block;
+    overflow:auto;
+    width:100%;
+    background:#f0ece1;
+    padding:10px;
+}
+form#emailPref {
+    width:80%;
+    text-align:left;
+    margin-top:0px;
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    font-size:17px; 
+    overflow:auto;
+    margin-top:10px;
+    margin-bottom:20px; 
+}
+form#emailPref label {
+    color:#333;
+}
+form#emailPref label span.city {
+    color:#999;
+    font-size:10px;
+}
+form#emailPref fieldset.email {
+    float:left;
+    width:63%;
+}
+form#emailPref fieldset.name {
+    float:left;
+    width:48%;
+    background-color: transparent;
+}
+form#emailPref fieldset.name.nameleft {
+    margin-right:20px;
+}
+form#emailPref fieldset {
+    float:left;
+    width:99%;
+    margin-top:10px;
+}
+form#emailPref fieldset.checkbox {
+    padding:20px 10px;
+    font-size:16px;
+    width:98%;
+}
+form#emailPref fieldset.checkbox label{
+    padding-left:0px;
+    padding-bottom:10px;
+}
+fieldset.checkbox a {
+    color: #bb0e1a;
+}
+form#emailPref fieldset.sub-btn {
+    float:none;
+    width:70%;
+    text-align:center;
+}
+form#emailPref input {
+    width:99%;
+    padding:7px 10px;
+    margin:5px 0px 7px;
+    margin-top:7px;
+    border-radius:2px;
+    border:1px solid #999;
+    font-size: 14px;
+    background-color: transparent;
+    font-family:  Arial, sans-serif;
+}
+form#emailPref fieldset.email input {
+    background-color: #fff;
+}
+form#emailPref input::placeholder {
+    color:#ab3c3c;
+}
+form#emailPref input.zip {
+    width:30%;
+}
+form#emailPref fieldset.checkbox {
+    
+    padding:3px 3px;
+}
+form#emailPref fieldset.checkbox input {
+    width:2%;
+    padding-top:0px;
+    margin-top:8px;
+    position:relative;
+}
+form#emailPref placeholder {
+    font-size:16px;
+}
+section.interests {
+    display:block;
+    overflow:auto;
+    width:100%;
+    background:#c9c5b8;
+    padding:10px;
+    margin: 0 auto;
+    text-align:center;
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    border-top:1px solid #999;
+    border-bottom:1px solid #999;
+}
+h1.interests {
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    font-size:24px;
+    color:#111;
+    letter-spacing:1px;
+    width:100%;
+    margin: 0 0;
+    padding:10px;
+    padding-top:15px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: .3em;
+}
+h1.interests img {
+    margin-bottom:0px;
+}
+.venues-main {
+     margin: 0 auto;
+    text-align:center;
+    width:80%;
+    max-width:900px;
+     margin-bottom:30px;
+}
+.fr-rest {
+    display:block;
+    margin-top:15px;
+    margin-bottom:15px;
+    width:80%;
+    text-align:left;
+    padding-left:10px;
+}
+.fr-left, .rest-right {
+    width:50%;
+    float:left;
+    font-size:20px;
+    text-transform:capitalize;
+}
+.fr-rest img {
+    width:15px;
+    margin-bottom:2px;
+}
+h4.title-inner {
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    font-size:18px;
+    color:#111;
+    font-weight:normal;
+    letter-spacing:.4px;
+    width:90%;
+    margin: 0 0;
+    padding:10px;
+    text-align:left;
+}
+h4.panel-title {
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    letter-spacing:.5px;
+}
+span.pref-sm {
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    font-size:14px;
+    color:#666;
+    font-weight:normal;
+    letter-spacing:.4px;
+}
+ul.my-venuesUl, ul.my-musicUl, ul.my-cntUl, ul.my-eventsUl {
+    display:flex;
+    flex-wrap:wrap;
+    list-style:none;
+    -webkit-margin-before: 0em;
+    -webkit-padding-start:0px;
+    margin-bottom:20px;
+}
+ul.my-venuesUl li, ul.my-musicUl li, ul.my-cntUl li, ul.my-eventsUl li {
+    width:33.3%;
+    padding:5px 7px;
+    text-align:left;
+    text-transform:capitalize;
+}
+ul.my-venuesUl li {
+    text-transform:uppercase;
+}
+.venue img {
+    width:15px;
+    vertical-align:top;
+    padding-bottom:14px;
+    margin: 0 0 0px;
+    margin-top:3px;
+}
+/*fieldset.email-pref {
+    text-align:left;
+    margin-bottom:30px;
+}
+select#epref {
+    background:#c9c5b8;
+    padding:10px;
+    width:250px;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    font-size:16px;
+    border-color:#999;
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+}*/
+#accordion {
+    text-align:left;
+}
+.panel-default>.panel-heading {
+    background-color:#deddd5;
+}
+.panel-collapse {
+    background-color:#c9c5b8;
+}
+.checkboxLabel {
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing:.4px;
+}
+.checkboxLabel span.city {
+    color:#777;
+    font-size:13px;
+}
+.blurb {
+    display:block;
+    font-size:12px;
+    color:#666;
+    font-family: arial, sans-serif;
+    line-height:16px;
+}
+button.em-pref {
+    font-family: 'Brandon Grotesque Medium', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing:1px;
+    padding:10px 40px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-radius:0px;
+    border:none;
+    background-color:#325d7b;
+    color:#fff;
+    width:50%;
+}
+#hiddenPref {display:none;}
+.ui-tooltip {
+    background:#deddd5 !important;
+    background-color:rgba(240,239,234,1);
+    opacity:1;
+    z-index:999;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media screen and (max-width: 920px) {
+   ul.my-cntUl li {
+        width:50%;
+   }
+}
+@media screen and (max-width: 900px) {
+    #emailPref {
+        margin-top:60px;
+    }
+@media screen and (max-width: 824px) {
+    ul.my-eventsUl li {
+        width:50%;
+    }
+}
+@media screen and (max-width: 724px) {
+    form#tablet-signup {
+        width:90%;
+    }
+}
+@media screen and (max-width: 680px) {
+    form#emailPref fieldset.name, form#emailPref fieldset.email {
+        width:99%;
+    }
+    form#emailPref input.zip {
+        width:99%;
+    }
+    form#emailPref fieldset.checkbox {
+        padding:0px 10px;
+    }
+    button.em-pref {
+        width:80%;
+    }
+    ul.my-venuesUl li, ul.my-musicUl li{
+        width:50%;
+    }
+    form#emailPref fieldset.checkbox label{
+        padding-left:10px;
+    }
+}
+@media screen and (max-width: 620px) {
+    ul.my-cntUl li {
+        width:1000%;
+   }
+}
+@media screen and (max-width: 560px) {
+    ul.my-eventsUl li {
+        width:100%;
+    }
+}
+@media screen and (max-width: 550px) {
+   ul.venueUl {
+        -webkit-padding-start:15px;
+    }
+    h1.interests img {
+        display:none;
+    }
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 475px) {
+     .venues-main, form#emailPref {
+        width:90%;
+    }
+    ul.my-venuesUl li, ul.my-musicUl li{
+        width:100%;
+    }
+    .fr-left, .rest-right {
+        width:100%;
+    }
+}
+
+
+
